@@ -24,7 +24,6 @@ export class NewMomentComponent {
     if (moment.image) {
       formData.append('image', moment.image);
     }
-    t;
 
     await this.momentService.createMoment(formData).subscribe();
   }
